@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"> 
+    <script>
+        function setUsername(){
+            document.getElementById("username-p").innerHTML = document.getElementById("usename").value + "'s Gallery";
+        }
+        function setProfileImage(){
+            document.getElementById("profileimage").style.backgroundImage = "url(" + document.getElementById("profileimg").value + ")" 
+        }
+        
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile-img" id="profileimage"></div>
+            <div class="noti">💜</div>
+        </div>
+        <div class="username">
+            <a href="https://youtu.be/RE_pN8ZUoNE" class="on-hover">
+            <p style="font-size: x-large; font-weight: 600;" id="username-p"></p>
+            </a>
+        </div>
+        <div class="input-group">
+            <div><label style="font-weight: 400;">username</label><input style="margin-left: 10px;" type="text" 
+                id="usename"><button style="margin-left: 10px;" id="setUsername" onclick="setUsername()">Apply</button></div>
+            <div><label style="font-weight: 400;">profile Image</label><input style="margin-left: 10px;" type="text"
+                id="profileimg"><button style="margin-left: 10px;" id="setProfile" onclick="setProfileImage()">Apply</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span" style="background-image: url(cpcute2.png);" ></div>
+            <div class="gallery-item row-span" style="background-image: url(cpglow.png);"></div>
+            <div class="gallery-item" style="background-image: url(image.png);"></div>
+            <div class="gallery-item" style="background-image: url(imageee.png);"></div>
+            <div class="gallery-item" style="background-image: url(images.png);"></div>
+            <div class="gallery-item" style="background-image: url(screenshot.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(IMG_5936.png);"></div>
+            <div class="gallery-item" style="background-image: url(IMG_5951.png);"></div>
+            <div class="gallery-item" style="background-image: url(IMG_6079.png);"></div>
+            <div class="gallery-item" style="background-image: url(IMG_6082.png);"></div>
+            <div class="=gallery-item"></div>
+            <div class="=gallery-item"></div>
+        </div>
+    </div>
+</body>
+
+</html>
